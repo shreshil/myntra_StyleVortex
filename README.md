@@ -1,2 +1,2 @@
 # myntra_StyleVortex
-this is project
+this Myntra styling contest StyleVortex project is made by team SHRATIKA.
