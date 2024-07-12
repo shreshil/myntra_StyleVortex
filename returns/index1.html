@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+ <div class="content">
+     
+     <div class="orders">   
+        <h1 class="header">User Orders</h1>  
+         <div class="order-item" id="order1">
+             <p>Product Name: Stylish Shirt</p>
+             <p id="status1">Status: Delivered</p>
+             <button onclick="returnItem('order1', 'status1', 'Stylish Shirt')">Return</button>
+         </div>
+         <div class="order-item" id="order2">
+             <p>Product Name: Trendy Jeans</p>
+             <p id="status2">Status: Delivered</p>
+             <button onclick="returnItem('order2', 'status2', 'Trendy Jeans')">Return</button>
+         </div>
+         <div class="order-item" id="order3">
+             <p>Product Name: Cool Jacket</p>
+             <p id="status3">Status: Delivered</p>
+             <button  onclick="returnItem('order3', 'status3', 'Cool Jacket')">Return</button>
+         </div>
+     </div>
+     <div class="returned-items">
+         <h2>Returned Items</h2>
+         <ul id="returned-list"></ul>
+     </div>
+ </div>
+    <script src="script.js"></script>
+</body>
+</html>
