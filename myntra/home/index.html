@@ -11,8 +11,8 @@
     }
  
   .header {
-    background-color: #ccc;
-    padding: 10px;
+    background-color: #ffffff;
+    padding: 40px;
     text-align: center;
   }
  
@@ -23,9 +23,15 @@
   }
 
   .header .logo {
-    font-size: 24px;
+    font-size: 10px;
     font-weight: bold;
   }
+  .contest-timer {
+  background-color: #c22071;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+}
 
   .content {
     display: flex;
@@ -53,7 +59,7 @@
 
   .frame img {
     width: 100%;
-    max-height: 300px;
+    max-height: 350px;
     object-fit: cover;
   }
 
@@ -71,10 +77,120 @@
   .frame button:hover {
     background-color: #c00;
   }
+  header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+  header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav ul li {
+  margin-right: 20px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  color: #ccc;
+}
+
+.hero {
+  background-color: #f7f7f7;
+  padding: 40px;
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-top: 0;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #666;
+}
+
+.hero button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background-color: #3e8e41;
+}
+
+.categories {
+  padding: 40px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.category {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.category img {
+  width: 90%;
+  height: 80%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.category h2 {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.category p {
+  font-size: 16px;
+  color: #666;
+}
+
+.category button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.category button:hover {
+  background-color: #3e8e41;
+}
 
   .footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #ccc;
+    color: #fbfcfc;
     text-align: center;
     padding: 10px;
     position: fixed;
@@ -86,7 +202,9 @@
 </head>
 <body>
 <header class="header">
-  <div class="logo">myntra </div>
+  <div class="logo">
+    <img src="logo.jpg"  align ="left" width="85 " height="57" > 
+  </div>
   <a href="https://www.myntra.com/shop/men">MEN</a>
   <a href="https://www.myntra.com/shop/women">WOMEN</a>
   <a href="https://www.myntra.com/shop/kids">KIDS</a>
@@ -97,7 +215,11 @@
   <a href="#" class="profile">Profile</a>
   <a href="#" class="wishlist">Wishlist</a>
   <a href="#" class="bag">Bag</a>
+ 
 </header>
+ <div class="contest-timer">
+  <p>Contest Ends In: <span id="timer">07 H: 03 M: 22 s</span></p>
+ </div>
 <div class="content">
   <div class="frame">
     <h2>#0010 Barbie Core! WINNERS</h2>
@@ -105,15 +227,78 @@
   </div>
   <div class="frame">
     <h2>#0011 Summer Chic</h2>
-    <p>Join in India's Biggest Fashion hunt:STYLE VORTEX</p>
+    <p>Join in India's Biggest Fashion hunt: <span style="color: brown">STYLE VORTEX</span></p>
     <p>"Summer chic" is a popular fashion trend that focuses on light, airy, and stylish clothing suitable for the warm weather.</p>
     <p>Create a unique CHIC style that is HOT even in summer</p>
     <button onclick="document.location='joinindex.html'">PARTICIPATE NOW!!</button>
     
   </div>
 </div>
+<main>
+  <section class="hero">
+      <img src="cat\ethnic wear.jpg" alt="Hero Image">
+      <h1>Ethnic Wear Sale</h1>
+      <p>Up to 80% off on our entire collection!</p>
+     <button onclick="document.location='https://www.myntra.com/fusion-wear?rf=Discount%20Range%3A50.0_100.0_50.0%20TO%20100.0&sort=popularity'">Shop Now</button>
+  </section>
+  <section class="categories">
+      <h2>Shop By Category</h2>
+      <div class="category-grid">
+          <div class="category">
+              <img src="cat\ethnic wear1.jpg" alt="Ethnic Wear">
+              <h2>Ethnic Wear</h2>
+              <p>50-80% OFF</p>
+              
+              <button onclick="document.location='https://www.myntra.com/fusion-wear?rf=Discount%20Range%3A50.0_100.0_50.0%20TO%20100.0&sort=popularity'">Shop Now</button>
+          </div>
+          <div class="category">
+              <img src="cat\WFH Casual Wear.jpg" alt="WFH Casual Wear">
+              <h2>WFH Casual Wear</h2>
+              <p>40-80% OFF</p>
+              <button onclick="document.location='https://www.myntra.com/men-casual-wear?plaEnabled=false&rf=Discount%20Range%3A40.0_100.0_40.0%20TO%20100.0'">Shop Now</button>
+          </div>
+          <div class="category">
+              <img src="cat\Men's Activewear.jpg" alt="Men's Activewear">
+              <h2>Men's Activewear</h2>
+              <p>40-80% OFF</p>
+              <button onclick="document.location='https://www.myntra.com/sports-wear?f=Gender%3Amen%2Cmen%20women&rawQuery=sports%20wear&rf=Discount%20Range%3A30.0_100.0_30.0%20TO%20100.0'">Shop Now</button>
+          </div>
+          <div class="category">
+              <img src="cat\Women's Activewear.jpg" alt="Men's Activewear">
+              <h2>Women's Activewear</h2>
+              <p>30-70% OFF</p>
+              <button onclick="document.location='https://www.myntra.com/wsa-all-new?rf=Discount%20Range%3A30.0_100.0_30.0%20TO%20100.0'">Shop Now</button>
+          </div>
+          <div class="category">
+              <img src="cat\kids wear.jpg" alt="Women's Activewear">
+              <h2>Kids Wear</h2>
+              <p>30-70% OFF</p>
+              <button onclick="document.location='https://www.myntra.com/kids?plaEnabled=false&rf=Discount%20Range%3A50.0_100.0_50.0%20TO%20100.0'">Shop Now</button>
+          </div>
+          <div class="category">
+              <img src="cat\Western Wear.jpg" alt="Western Wear">
+              <h2>Western Wear</h2>
+              <p>30-70% OFF</p>
+              <button onclick="document.location='https://www.myntra.com/womens-western-wear?rf=Discount%20Range%3A50.0_100.0_50.0%20TO%20100.0'">Shop Now</button>
+          </div>
+          <div class="category">
+              <img src="cat\watches.jpg" alt="Western Wear">
+              <h2>Watches</h2>
+              <p>40-80% OFF</p>
+              <button onclick="document.location='https://www.myntra.com/watches?rf=Discount%20Range%3A10.0_100.0_10.0%20TO%20100.0'">Shop Now</button>
+          </div>
+          <div class="category">
+              <img src="cat\Sportswear.jpg" alt="Sportswear">
+              <h2>Sports wear</h2>
+              <p>30-80% OFF</p>
+              <button onclick="document.location='https://www.myntra.com/wsa-all-new?rf=Discount%20Range%3A30.0_100.0_30.0%20TO%20100.0'">Shop Now</button>
+          </div>
+      </div>
+  </section>
+</main>
+<script src="homejs.js"></script>
 <footer class="footer">
-  <p>&copy; 2024 My Company</p>
+  <p>&copy;  2024 www.myntra.com. All rights reserved.</p>
 </footer>
 </body>
 </html>
