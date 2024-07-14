@@ -44,30 +44,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Choices Page</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h1 {
+    text-align: center;
+    color: #f05050;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+    padding-left: 30px;
+    line-height: 1.5;
+    user-select: none;
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #ccc;
+    border-radius: 3px;
+}
+
+input[type="checkbox"]:checked ~ .checkmark {
+    background-color: #f05050;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ .checkmark:after {
+    display: block;
+}
+
+input[type="checkbox"]:checked ~ .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f05050;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #d04040;
+}
+
+    </style>
 </head>
 <body>
-    <h1>Choices Page</h1>
-    <form id="choicesForm">
-        <label>
-            <input type="checkbox" name="choice" value="Option 1"> Option 1
-        </label><br>
-        <label>
-            <input type="checkbox" name="choice" value="Option 2"> Option 2
-        </label><br>
-        <label>
-            <input type="checkbox" name="choice" value="Option 3"> Option 3
-        </label><br>
-        <label>
-            <input type="checkbox" name="choice" value="Option 4"> Option 4
-        </label><br>
-        <label>
-            <input type="checkbox" name="choice" value="Option 5"> Option 5
-        </label><br>
-        <label>
-            <input type="checkbox" name="choice" value="Option 6"> Option 6
-        </label><br>
-        <button type="button" id="selectBtn">Select</button>
-    </form>
+    <div class="container">
+        <h1>Your Orders</h1>
+        <form id="choicesForm">
+            <label>
+                <input type="checkbox" name="choice" value="Stylish Shirt">
+                <span class="checkmark"></span> Stylish Shirt
+            </label>
+            <label>
+                <input type="checkbox" name="choice" value="Trendy Jeans">
+                <span class="checkmark"></span> Trendy Jeans
+            </label>
+            <label>
+                <input type="checkbox" name="choice" value="Cool Jacket">
+                <span class="checkmark"></span> Cool Jacket
+            </label>
+            <label>
+                <input type="checkbox" name="choice" value="Pearl Necklace">
+                <span class="checkmark"></span> Pearl Necklace
+            </label>
+            <label>
+                <input type="checkbox" name="choice" value="Matte Lipstick">
+                <span class="checkmark"></span> Matte Lipstick
+            </label>
+            <label>
+                <input type="checkbox" name="choice" value="Supersize Maxi Dress">
+                <span class="checkmark"></span> Supersize Maxi Dress
+            </label>
+            <button type="button" id="selectBtn">Select</button>
+        </form>
+    </div>
 
     <script>
         // Clear localStorage when the choices page is loaded
