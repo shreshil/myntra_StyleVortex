@@ -1,86 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Fashion Contest</title>
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Contest</title>
+  <style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    }
+ 
+  .header {
+    background-color: #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+ 
+  .header a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+  }
 
-.header {
-  background-color: #ccc;
-  padding: 10px;
-  text-align: center;
-}
+  .header .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
 
-.header a {
-  text-decoration: none;
-  color: #333;
-  margin: 0 10px;
-}
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+  }
 
-.header .logo {
-  font-size: 24px;
-  font-weight: bold;
-}
+  .frame {
+   width: 45%;
+   border: 1px solid #ccc;
+   padding: 20px;
+  }
 
-.content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 20px;
-}
+  .frame h2 {
+    color: #f00;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+ 
+  .frame p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
 
-.frame {
-  width: 45%;
-  border: 1px solid #ccc;
-  padding: 20px;
-}
+  .frame img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+  }
 
-.frame h2 {
-  color: #f00;
-  font-size: 24px;
-  margin-bottom: 10px;
-}
+  .frame button {
+    background-color: #f00;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+  }
 
-.frame p {
-  font-size: 16px;
-  line-height: 1.5;
-}
+  .frame button:hover {
+    background-color: #c00;
+  }
 
-.frame img {
-  width: 100%;
-  max-height: 300px;
-  object-fit: cover;
-}
-
-.frame button {
-  background-color: #f00;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 18px;
-  margin-top: 20px;
-}
-
-.frame button:hover {
-  background-color: #c00;
-}
-
-.footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-}
-</style>
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+ </style>
 </head>
 <body>
 <header class="header">
@@ -99,14 +101,14 @@ body {
 <div class="content">
   <div class="frame">
     <h2>#0010 Barbie Core! WINNERS</h2>
-    <img src="C:\Users\abhij\OneDrive\Desktop\myntra\home\home img.jpg" alt="Barbie Core">
+    <img src="home img.jpg" alt="Barbie Core">
   </div>
   <div class="frame">
     <h2>#0011 Summer Chic</h2>
     <p>Join in India's Biggest Fashion hunt:STYLE VORTEX</p>
     <p>"Summer chic" is a popular fashion trend that focuses on light, airy, and stylish clothing suitable for the warm weather.</p>
     <p>Create a unique CHIC style that is HOT even in summer</p>
-    <button onclick="document.location='file:///C:/Users/abhij/OneDrive/Desktop/myntra/join/index.html'">PARTICIPATE NOW!!</button>
+    <button onclick="document.location='joinindex.html'">PARTICIPATE NOW!!</button>
     
   </div>
 </div>
