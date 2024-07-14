@@ -1,13 +1,4 @@
-/*document.getElementById('addProductBtn').addEventListener('click', function() {
-    window.location.href = 'choices.html';
-});
 
-window.onload = function() {
-    const selectedChoices = localStorage.getItem('selectedChoices');
-    if (selectedChoices) {
-        document.getElementById('placeholder').innerText = selectedChoices;
-    }
-};*/
 document.getElementById('addProductBtn').addEventListener('click', function() {
     window.location.href = 'choices.html';
 });
@@ -22,7 +13,7 @@ window.onload = function() {
 function displaySelectedChoices(choices) {
     const placeholderContainer = document.getElementById('placeholderContainer');
     const placeholderText = document.getElementById('placeholderText');
-    placeholderContainer.innerHTML = ''; // Clear any existing choices
+    placeholderContainer.innerHTML = ''; 
     choices.forEach(choice => {
         const choiceBox = document.createElement('div');
         choiceBox.classList.add('choice-box');
@@ -48,7 +39,7 @@ document.getElementById('mainForm').addEventListener('submit', function(event) {
         images: []
     };
     for (let i = 0; i < images.length; i++) {
-        data.images.push(images[i].name); // Store image file names for display
+        data.images.push(images[i].name); 
     }
 
     localStorage.setItem('formData', JSON.stringify(data));

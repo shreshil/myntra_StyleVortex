@@ -1,4 +1,4 @@
-// Timer script
+
 let timer = document.getElementById("timer");
 let time = 4322; // 07 H: 03 M: 22 s
 let interval = setInterval(function() {

@@ -1,43 +1,4 @@
-<!--  <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Choices Page</title>
-</head>
-<body>
-    <h1>Choices Page</h1>
-    <form id="choicesForm">
-        <label>
-            <input type="checkbox" name="choice" value="Option 1"> Option 1
-        </label><br>
-        <label>
-            <input type="checkbox" name="choice" value="Option 2"> Option 2
-        </label><br>
-        <label>
-            <input type="checkbox" name="choice" value="Option 3"> Option 3
-        </label><br>
-        <button type="button" id="selectBtn">Select</button>
-    </form>
 
-    <script>
-        document.getElementById('selectBtn').addEventListener('click', function() {
-            const choices = [];
-            document.querySelectorAll('input[name="choice"]:checked').forEach((checkbox) => {
-                choices.push(checkbox.value);
-          });
-
-            if (choices.length > 0) {
-                localStorage.setItem('selectedChoices', choices.join(', '));
-            } else {
-                localStorage.removeItem('selectedChoices');
-            }
-
-            window.location.href = 'joinindex.html';
-        });
-    </script>
-</body>
-</html>-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -174,7 +135,7 @@ button:hover {
     </div>
 
     <script>
-        // Clear localStorage when the choices page is loaded
+       
         window.onload = function() {
             localStorage.removeItem('selectedChoices');
         };

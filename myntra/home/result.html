@@ -189,24 +189,20 @@ button:hover {
         </div>
         
         <div class="image-slider" id="imageSlider">
-            <!-- Images will be dynamically added here -->
         </div>
 
         <div class="post-actions">
             <i class="fa fa-heart" id="likeBtn"></i><span id="likeCount">0 Likes</span>
             <div class="slider-dots" id="sliderDots">
-                <!-- Slider dots will be dynamically added her-->
             </div>
             <i class="fa fa-paper-plane"></i>
         </div>
 
         <div class="product-slider" id="productSlider">
-            <!-- Product links will be dynamically added here -->
-        </div>
+            </div>
 
         <div class="post-description" id="description">
-            <!-- Description will be dynamically added here -->
-        </div>
+                   </div>
 
         <div class="post-footer">
             
@@ -222,7 +218,7 @@ button:hover {
         window.onload = function() {
             const formData = JSON.parse(localStorage.getItem('formData'));
 
-            // Display images
+            
             const imageSlider = document.getElementById('imageSlider');
             const sliderDots = document.getElementById('sliderDots');
             formData.images.forEach((imageName, index) => {
@@ -237,13 +233,13 @@ button:hover {
                 sliderDots.appendChild(dot);
             });
 
-            // Display description
+        
             const descriptionDiv = document.getElementById('description');
             const descriptionP = document.createElement('p');
             descriptionP.textContent = formData.description;
             descriptionDiv.appendChild(descriptionP);
 
-            // Display product links
+            
             const productSlider = document.getElementById('productSlider');
             const choices = formData.choices ? formData.choices.split(', ') : [];
             choices.forEach(choice => {
@@ -259,7 +255,7 @@ button:hover {
                 productSlider.appendChild(div);
             });
 
-            // Handle like button
+            
             const likeBtn = document.getElementById('likeBtn');
         const likeCountSpan = document.getElementById('likeCount');
         let likeCount = parseInt(localStorage.getItem('likeCount') || '0', 10);
