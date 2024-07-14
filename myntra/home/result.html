@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Page</title>
+</head>
+<body>
+    <h1>Submitted Data</h1>
+    <div id="resultContainer"></div>
+
+    <script>
+        window.onload = function() {
+            const data = JSON.parse(localStorage.getItem('formData'));
+            const resultContainer = document.getElementById('resultContainer');
+
+            if (data) {
+                const choices = data.choices ? data.choices.split(', ') : [];
+                const choicesDiv = document.createElement('div');
+                choicesDiv.innerHTML = `<strong>Selected Choices:</strong> ${choices.join(', ')}`;
+                resultContainer.appendChild(choicesDiv);
+
+                const descriptionDiv = document.createElement('div');
+                descriptionDiv.innerHTML = `<strong>Description:</strong> ${data.description}`;
+                resultContainer.appendChild(descriptionDiv);
+
+                const codeDiv = document.createElement('div');
+                codeDiv.innerHTML = `<strong>Code:</strong> ${data.code}`;
+                resultContainer.appendChild(codeDiv);
+
+                const imagesDiv = document.createElement('div');
+                imagesDiv.innerHTML = `<strong>Images:</strong> ${data.images.join(', ')}`;
+                resultContainer.appendChild(imagesDiv);
+            }
+        };
+    </script>
+</body>
+</html>
