@@ -1,5 +1,10 @@
 # myntra_StyleVortex
 this Myntra styling contest StyleVortex project is made by team SHRATIKA. 
+-Shreya Sinha(B.TECH CSE 2ND YEAR)
+-Kratika Soni(B.TECH CSE 2ND YEAR)
+ STYLE VORTEX:Seasonal fashion styling contest by MYNTRA.
+ "Unleash the inner stylist and showcase unique Gen Z fashion sense in our exciting styling contest!
+ Participate and stand a chance to win fantastic rewards and gain recognition for your creative flair."
 
 This project consist:
 
