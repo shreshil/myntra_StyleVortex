@@ -21,7 +21,7 @@ function displaySelectedChoices(choices) {
         placeholderContainer.appendChild(choiceBox);
     });
     if (choices.length === 0) {
-        placeholderContainer.appendChild(placeholderText); // Add placeholder text if no choices
+        placeholderContainer.appendChild(placeholderText); 
     }
    
 }
