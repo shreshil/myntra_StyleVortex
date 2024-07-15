@@ -55,7 +55,6 @@ Instructions on how to run the project:
 
 ## API Endpoints
 
-List the available API endpoints and their usage:
 
 - **GET /generate_theme**: Retrieves generated themes.
   ```bash
