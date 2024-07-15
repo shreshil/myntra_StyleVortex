@@ -6,7 +6,7 @@ this Myntra styling contest StyleVortex project is made by team SHRATIKA.
  "Unleash the inner stylist and showcase unique Gen Z fashion sense in our exciting styling contest!
  Participate and stand a chance to win fantastic rewards and gain recognition for your creative flair."
 
-This project consist:
+This PROTOTYPE project consist:
 
 -Theme Generation ;based on any trending topic, theme can be generated .we can fetch data using keywords, hashtags etc. from social media an feed it to prompt to generate contest theme.
 for this prototype, we used fake data already added in json.
